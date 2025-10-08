@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Deerwalk Pokhara School</title>
+    <title>Deerwalk Bharatpur School</title>
     @vite('resources/css/app.css')
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <style>
@@ -26,10 +26,10 @@
 
 
 <body class="overflow-x-hidden">
-    <header class="bg-white sticky top-0 z-10 shadow-md">
+    <header class="bg-[#4F65DE] sticky top-0 z-10 shadow-md">
         <nav class="flex justify-between items-center h-16 md:h-20 px-4 md:px-8">
             <a target="_self" href="/" class="w-36 h-16">
-                <img src="{{asset('storage/DPS-Logo-blue.png')}}" class="h-full object-contain">
+                <img src="{{ asset('logo/white.png') }}" alt="Logo" class="h-full object-contain">
             </a>
             <button id="hamburger" class="block lg:hidden p-4 focus:outline-none">
                 <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -45,10 +45,10 @@
                         <a href="#Units" class="px-4 py-2 font-body text-black hover:bg-primary hover:text-white">Our Units</a>
                     </div> -->
                 </div>
-                <a href="#Academics" class="font-medium text-black hover:text-primary">Academics</a>
-                <a href="#Admission" class="font-medium text-black hover:text-primary">Admission</a>
-                <a href="#Courses" class="font-medium text-black hover:text-primary">Courses</a>
-                <a href="#Footer" class="font-medium text-black hover:text-primary">Contact</a>
+                <a href="#Academics" class="font-medium text-white hover:text-primary">Academics</a>
+                <a href="#Admission" class="font-medium text-white hover:text-primary">Admission</a>
+                <a href="#Courses" class="font-medium text-white hover:text-primary">Courses</a>
+                <a href="#Footer" class="font-medium text-white hover:text-primary">Contact</a>
             </div>
         </nav>
 
@@ -84,26 +84,26 @@
     <!-- Carousel Slides -->
     <div class="w-full h-full">
         <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 ease-in-out z-10 opacity-100" data-slide="0">
-            <img src="{{ asset('storage/carouselI.png') }}" alt="Pokhara landscape" class="object-cover h-screen w-screen">
+            <img src="{{ asset('upload/heropage.png') }}" alt="Bharatpur landscape" class="object-cover h-screen w-screen">
         </div>
-        <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 ease-in-out z-10 opacity-0" data-slide="1">
-            <img src="{{ asset('storage/carouselII.png') }}" alt="Second slide" class="object-cover h-screen w-screen">
+        <!-- <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 ease-in-out z-10 opacity-0" data-slide="1">
+            <img src="{{ asset('upload/carouselII.png') }}" alt="Second slide" class="object-cover h-screen w-screen">
         </div>
         <div class="absolute top-0 left-0 w-full h-full transition-opacity duration-500 ease-in-out z-10 opacity-0" data-slide="2">
-            <img src="{{ asset('storage/carousel1.png') }}" alt="Third slide" class="object-cover h-screen w-screen">
-        </div>
+            <img src="{{ asset('upload/carousel1.png') }}" alt="Third slide" class="object-cover h-screen w-screen">
+        </div> -->
     </div>
     
     <!-- Navigation arrows -->
-    <button class="absolute top-1/2 left-4 -translate-y-1/2 w-12 h-12 bg-black/30 hover:bg-black/50 rounded-full flex items-center justify-center z-30 cursor-pointer border-none text-white transition-colors duration-300" id="prevButton" aria-label="Previous slide">
+    <!-- <button class="absolute top-1/2 left-4 -translate-y-1/2 w-12 h-12 bg-black/30 hover:bg-black/50 rounded-full flex items-center justify-center z-30 cursor-pointer border-none text-white transition-colors duration-300" id="prevButton" aria-label="Previous slide">
         <i class="text-xl">&larr;</i>
     </button>
     <button class="absolute top-1/2 right-4 -translate-y-1/2 w-12 h-12 bg-black/30 hover:bg-black/50 rounded-full flex items-center justify-center z-30 cursor-pointer border-none text-white transition-colors duration-300" id="nextButton" aria-label="Next slide">
         <i class="text-xl">&rarr;</i>
-    </button>
+    </button> -->
 </div>
 
-<script>
+<!-- <script>
     document.addEventListener('DOMContentLoaded', function() {
         const slides = document.querySelectorAll('[data-slide]');
         const prevButton = document.getElementById('prevButton');
@@ -183,7 +183,7 @@
         carousel.addEventListener('mouseenter', stopAutoplay);
         carousel.addEventListener('mouseleave', startAutoplay);
     });
-</script>
+</script> -->
 
 
 
@@ -197,7 +197,7 @@
             <!-- <div class="cursor-pointer">
                 <div class="relative bg-primary rounded-xl w-[14rem] h-[16rem] sm:h-[26.8rem] sm:w-[20rem] lg:h-[30.5rem] lg:w-[24rem] xl:w-[23rem] xl:h-[30.9rem] 2xl:w-[19rem] 2xl:h-[28rem]">
                     <div class="absolute bottom-2 right-2">
-                        <img src="{{asset('storage/Primary School.jpg')}}" class="rounded-t-xl h-[11.5rem] w-full sm:h-[17.9rem] lg:h-[20.5rem] xl:h-[20.5rem] 2xl:h-[21.5rem] object-cover">
+                        <img src="{{asset('upload/Primary School.jpg')}}" class="rounded-t-xl h-[11.5rem] w-full sm:h-[17.9rem] lg:h-[20.5rem] xl:h-[20.5rem] 2xl:h-[21.5rem] object-cover">
                         <div class="absolute h-[11.5rem] sm:h-[17.9rem] lg:h-[20.6rem] xl:h-[20.5rem] 2xl:h-[21.5rem] w-full bg-black/40 flex items-center justify-center bottom-[4.5rem] sm:bottom-[8.8rem] md:bottom-[8.8rem] lg:bottom-[10rem] xl:bottom-[10.2rem] 2xl:bottom-[6.5rem] rounded-t-xl opacity-0 hover:opacity-100 transition-all duration-300">
                             <p class="text-white font-bold text-lg sm:text-2xl md:text-4xl lg:text-4xl">Nursery to 3</p>
                         </div>
@@ -211,7 +211,7 @@
             <div class="cursor-pointer">
                 <div class="relative bg-primary rounded-xl w-[14rem] h-[16rem] sm:h-[26.8rem] sm:w-[20rem] lg:h-[30.5rem] lg:w-[24rem] xl:w-[23rem] xl:h-[30.9rem] 2xl:w-[19rem] 2xl:h-[28rem]">
                     <div class="relative bottom-2 right-2">
-                        <img src="{{asset('storage/junior.png')}}" class="rounded-t-xl h-[11.5rem] w-full sm:h-[17.9rem] lg:h-[20.5rem] xl:h-[20.5rem] 2xl:h-[21.3rem] object-cover">
+                        <img src="{{asset('upload/junior.jpg')}}" class="rounded-t-xl h-[11.5rem] w-full sm:h-[17.9rem] lg:h-[20.5rem] xl:h-[20.5rem] 2xl:h-[21.3rem] object-cover">
                         <div class="absolute h-[11.5rem] sm:h-[17.9rem] lg:h-[20.6rem] xl:h-[20.5rem] 2xl:h-[21.3rem] w-full bg-black/40 flex items-center justify-center bottom-[4.5rem] sm:bottom-[8.5rem] md:bottom-[8.8rem] lg:bottom-[10rem] xl:bottom-[10.2rem] 2xl:bottom-[6.5rem] rounded-t-xl opacity-0 hover:opacity-100 transition-all duration-300">
                         <p class="text-white font-bold text-sm sm:text-lg md:text-xl lg:text-2xl">Nursery to Grade 3</p>
                         </div>
@@ -225,7 +225,7 @@
             <div class="cursor-pointer">
                 <div class="relative bg-primary rounded-xl w-[14rem] h-[16rem] sm:h-[26.8rem] sm:w-[20rem] lg:h-[30.5rem] lg:w-[24rem] xl:w-[23rem] xl:h-[30.9rem] 2xl:w-[19rem] 2xl:h-[28rem]">
                     <div class="relative bottom-2 right-2">
-                        <img src="{{asset('storage/senior.png')}}" class="rounded-t-xl h-[11.5rem] w-full sm:h-[17.9rem] lg:h-[20.5rem] xl:h-[20.5rem] 2xl:h-[21.3rem] object-cover">
+                        <img src="{{asset('upload/senior.jpg')}}" class="rounded-t-xl h-[11.5rem] w-full sm:h-[17.9rem] lg:h-[20.5rem] xl:h-[20.5rem] 2xl:h-[21.3rem] object-cover">
                         <div class="absolute h-[11.5rem] sm:h-[17.9rem] lg:h-[20.6rem] xl:h-[20.5rem] 2xl:h-[21.3rem] w-full bg-black/40 flex items-center justify-center bottom-[4.5rem] sm:bottom-[8.8rem] md:bottom-[8.8rem] lg:bottom-[10rem] xl:bottom-[10.2rem] 2xl:bottom-[6.5rem] rounded-t-xl opacity-0 hover:opacity-100 transition-all duration-300">
                         <p class="text-white font-bold text-sm sm:text-lg md:text-xl lg:text-2xl">Grade 5 to 12</p>
                         </div>
@@ -241,7 +241,7 @@
 
 <div class="flex justify-center pt-11 sm:pt-14 md:pt-16 lg:pt-20 xl:pt-24" id="whyDPS">
     <div class="flex flex-col gap-7 sm:gap-10 md:gap-12 lg:gap-14 xl:gap-16">
-        <h1 class="text-primary font-arialBold font-bold text-2xl text-center md:text-4xl xl:text-4xl">Why Choose Deerwalk Pokhara School?</h1>
+        <h1 class="text-primary font-arialBold font-bold text-2xl text-center md:text-4xl xl:text-4xl">Why Choose Deerwalk Bharatpur School?</h1>
         <div class="lg:block block">
             <div class="hidden lg:flex flex-col gap-6 lg:gap-3 xl:gap-4">
                 <!-- Desktop view -->
@@ -249,11 +249,11 @@
                     <div class="flex flex-col gap-5 xl:gap-5 2xl:gap-5 md:p-10 lg:p-7 xl:p-9 2xl:p-9 border-8 border-primary rounded-3xl w-[15rem] h-[17rem] sm:w-[28rem] sm:h-[16rem] md:w-[40rem] md:h-[23rem] lg:w-[30rem] lg:h-[18rem] xl:w-[36rem] xl:h-[19rem] 2xl:w-[36rem] 2xl:h-[18rem]">
                         <div class="flex flex-row justify-between">
                             <h1 class="font-arialBold text-primary text-2xl md:text-3xl lg:text-2xl 2xl:text-2xl">Essential Skills</h1>
-                            <img src="{{asset('storage/skills-green.png')}}" class="h-[2rem] sm:h-[1.8rem] md:h-[2rem] xl:h-[2.7rem] 2xl:h-[2.3rem]">
+                            <img src="{{asset('icon/skills.png')}}" class="h-[2rem] sm:h-[1.8rem] md:h-[2rem] xl:h-[2.7rem] 2xl:h-[2.3rem]" alt="skills">
                         </div>
                         <div>
                             <p class="font-arialRegular lg:text-normal text-justify">
-                                Deerwalk Pokhara School believes in equipping its students with all the necessary essential skills.
+                                Deerwalk Bharatpur School believes in equipping its students with all the necessary essential skills.
                                 These skills encompass active listening, adherence to the 5 R’s of DPS (showing respect for everyone, maintaining a neat dress code,
                                 and upholding a zero-tolerance policy against bullying, sexist language, and dishonesty).
                             </p>
@@ -262,13 +262,13 @@
                     <div class="flex flex-col gap-5 xl:gap-5 2xl:gap-5 md:p-10 lg:p-7 xl:p-9 2xl:p-9 bg-primary rounded-3xl border-8 border-primary w-[20rem] h-[19rem] sm:w-[28rem] sm:h-[16rem] md:w-[40rem] md:h-[23rem] lg:w-[30rem] lg:h-[18rem] xl:w-[36rem] xl:h-[19rem] 2xl:w-[36rem] 2xl:h-[18rem]">
                         <div class="flex flex-row justify-between">
                             <h1 class="font-arialBold text-2xl text-white md:text-3xl lg:text-2xl 2xl:text-2xl">Language Skills</h1>
-                            <img src="{{asset('storage/language.png')}}" class="h-[2rem] sm:h-[1.8rem] md:h-[2rem] xl:h-[2.7rem] 2xl:h-[2.3rem]">
+                            <img src="{{asset('icon/language.png')}}" class="h-[2rem] sm:h-[1.8rem] md:h-[2rem] xl:h-[2.7rem] 2xl:h-[2.3rem]" alt="language">
                         </div>
                         <div>
                             <p class="text-white font-arialRegular lg:text-normal text-justify">
                                 In terms of language proficiency, while English serves as the primary language, there are no penalties for speaking Nepali.
                                 Sanskrit, recognized for its enduring nature and its foundational role in coding languages and speech therapy,
-                                is also included in the language curriculum at Deerwalk Pokhara School.
+                                is also included in the language curriculum at Deerwalk Bharatpur School.
                             </p>
                         </div>
                     </div>
@@ -277,7 +277,7 @@
                     <div class="flex flex-col gap-5 2xl:gap-6 lg:p-7 xl:p-9 2xl:p-9 border-primary border-8 rounded-3xl w-[20rem] h-[19rem] sm:w-[28rem] sm:h-[16rem] md:w-[32rem] md:h-[20rem] lg:w-[30rem] lg:h-[18rem] lg:bg-primary xl:w-[36rem] xl:h-[19rem] 2xl:w-[36rem] 2xl:h-[18rem] ">
                         <div class="flex flex-row justify-between">
                             <h1 class="font-arialBold font-bold text-2xl md:text-3xl lg:text-2xl 2xl:text-2xl text-primary lg:text-white">Academic Fundamentals</h1>
-                            <img src="{{asset('storage/book-white.png')}}" class="h-[2.5rem] sm:h-[1.8rem] md:h-[2rem] xl:h-[2.7rem] 2xl:h-[2.3rem] hidden lg:block">
+                            <img src="{{asset('icon/book-white.png')}}" class="h-[2.5rem] sm:h-[1.8rem] md:h-[2rem] xl:h-[2.7rem] 2xl:h-[2.3rem] hidden lg:block" alt="book">
                         </div>
                         <div>
                             <p class="text-white font-arialRegular lg:text-base text-justify">
@@ -290,11 +290,11 @@
                     <div class="flex flex-col gap-5 2xl:gap-6 lg:p-7 xl:p-9 2xl:p-9 rounded-3xl lg:border-primary w-[20rem] h-[19rem] sm:w-[28rem] sm:h-[16rem] md:w-[32rem] md:h-[20rem] lg:w-[30rem] lg:h-[18rem] lg:border-8 xl:w-[36rem] xl:h-[19rem] 2xl:w-[36rem] 2xl:h-[18rem]">
                         <div class="flex flex-row justify-between">
                             <h1 class="font-arialBold text-2xl md:text-3xl lg:text-2xl 2xl:text-2xl  lg:text-primary">Extra Curricular Activities</h1>
-                            <img src="{{asset('storage/flask-green.png')}}" class="h-[2.5rem] sm:h-[1.8rem] md:h-[2rem] xl:h-[2.7rem] 2xl:h-[2.3rem] hidden lg:block">
+                            <img src="{{asset('icon/flask.png')}}" class="h-[2.5rem] sm:h-[1.8rem] md:h-[2rem] xl:h-[2.7rem] 2xl:h-[2.3rem] hidden lg:block" alt="flask">
                         </div>
                         <div>
                             <p class="text-black font-arialRegular lg:text-base text-justify">
-                                Deerwalk Pokhara School champions holistic development through a diverse range of extracurricular activities (ECA),
+                                Deerwalk Bharatpur School champions holistic development through a diverse range of extracurricular activities (ECA),
                                 including student clubs categorized as exclusive and inclusive.
                                 These clubs offer students opportunities for personal growth, leadership development, and overall enrichment alongside their academic pursuits.
                             </p>
@@ -309,11 +309,11 @@
                         <div class="flex flex-col gap-5 p-5 border-4 rounded-xl sm:p-5 md:p-6 sm:border-8 border-primary lg:rounded-3xl w-[13rem] max-h-[17rem] sm:w-[15rem] sm:h-[17rem] md:w-[23rem] md:h-[14rem]">
                             <div class="flex flex-row justify-between">
                                 <h1 class="font-arialBold font-bold text-base sm:text-xl text-primary md:text-3xl">Essential Skills</h1>
-                                <img src="{{asset('storage/skills-green.png')}}" class="ml-2 h-[1.6rem] sm:h-[1.8rem] sm:mt-0.5 md:h-[2rem] md:mt-0 xl:pr-9 xl:mr-4 xl:h-[2.1rem]">
+                                <img src="{{asset('icon/skills.png')}}" class="ml-2 h-[1.6rem] sm:h-[1.8rem] sm:mt-0.5 md:h-[2rem] md:mt-0 xl:pr-9 xl:mr-4 xl:h-[2.1rem]" alt="skills">
                             </div>
                             <div class="overflow-auto">
                                 <p class="font-arialRegular font-medium text-left text-xs sm:text-sm">
-                                    Deerwalk Pokhara School believes in equipping its students with essential skills crucial for both academic success and overall growth and development.
+                                    Deerwalk Bharatpur School believes in equipping its students with essential skills crucial for both academic success and overall growth and development.
                                     These skills encompass active listening, adherence to the 5 R’s of DSS (showing respect for everyone), maintaining a neat dress code, and upholding a zero-tolerance policy against bullying, sexist language, and dishonesty.
                                     The school places significant emphasis on these skills as they play a vital role in creating a positive and inclusive learning environment conducive to the thriving of every student.
                                 </p>
@@ -322,13 +322,13 @@
                         <div class="flex flex-col gap-5 p-5 sm:p-5 md:p-6 bg-primary rounded-xl lg:rounded-3xl border-4 sm:border-8 border-primary w-[13rem] max-h-[17rem] sm:w-[15rem] sm:h-[17rem] md:w-[23rem] md:h-[14rem]">
                             <div class="flex flex-row justify-between">
                                 <h1 class="font-arialBold font-bold text-base sm:text-xl text-white md:text-3xl">Language Skills</h1>
-                                <img src="{{asset('storage/language.png')}}" class="h-[1.6rem] ml-2 sm:h-[1.8rem] sm:mt-0.5 md:h-[2rem] md:mt-0">
+                                <img src="{{asset('icon/language.png')}}" class="h-[1.6rem] ml-2 sm:h-[1.8rem] sm:mt-0.5 md:h-[2rem] md:mt-0" alt="language">
                             </div>
                             <div class="overflow-auto">
                                 <p class="text-white font-arialRegular font-medium text-xs sm:text-sm text-left">
-                                    In terms of language proficiency, Deerwalk Pokhara School advocates for the learning of multiple languages.
+                                    In terms of language proficiency, Deerwalk Bharatpur School advocates for the learning of multiple languages.
                                     While English serves as the primary language for instruction and communication, with students mandated to read one English book monthly, there are no penalties for speaking Nepali, thereby fostering an appreciation for the native language.
-                                    Additionally, students are encouraged to read one Nepali book monthly. Sanskrit, recognized for its enduring nature and its foundational role in coding languages and speech therapy, is also included in the language curriculum at Deerwalk Pokhara School.
+                                    Additionally, students are encouraged to read one Nepali book monthly. Sanskrit, recognized for its enduring nature and its foundational role in coding languages and speech therapy, is also included in the language curriculum at Deerwalk Bharatpur School.
                                 </p>
                             </div>
                         </div>
@@ -337,25 +337,30 @@
                         <div class="flex flex-col gap-5 p-5 sm:p-5 md:p-6 border-primary border-4 sm:border-8 rounded-xl lg:rounded-3xl w-[13rem] max-h-[17rem] overflow-auto sm:w-[15rem] sm:h-[17rem] md:w-[23rem] md:h-[14rem]">
                             <div class="flex flex-row justify-between">
                                 <h1 class="font-arialBold font-bold text-base sm:text-xl md:text-3xl text-primary">Academic Fundamentals</h1>
-                                <img src="{{asset('storage/book.png')}}" class="h-[1.6rem] sm:h-[1.8rem] sm:mt-0.5 md:h-[2rem]">
+                                <img src="{{asset('icon/book-white.png')}}" class="h-[1.6rem] sm:h-[1.8rem] sm:mt-0.5 md:h-[2rem]" alt="book">
                             </div>
                             <div class="overflow-auto">
                                 <p class="font-arialRegular font-medium text-xs sm:text-sm text-left">
                                     The school places utmost importance on academic fundamentals such as handwriting, completion of classwork and homework, maintaining a zero-tolerance stance against plagiarism, and engaging in project work.
-                                    Mastery of these fundamentals is deemed essential for academic success and future growth, forming the cornerstone of the academic experience at Deerwalk Pokhara School.
+                                    Mastery of these fundamentals is deemed essential for academic success and future growth, forming the cornerstone of the academic experience at Deerwalk Bharatpur School.
                                 </p>
                             </div>
                         </div>
                         <div class="flex flex-col gap-5 p-5 sm:p-5 md:p-6 rounded-lg lg:rounded-3xl bg-primary border-primary border-4 w-[13rem] max-h-[17rem] overflow-auto sm:w-[15rem] sm:h-[17rem] md:w-[23rem] md:h-[14rem]">
                             <div class="flex flex-row justify-between">
                                 <h1 class="font-arialBold font-bold text-base sm:text-xl md:text-3xl text-white">Extra Curricular Activities</h1>
-                                <img src="{{asset('storage/flask-white.png')}}" class="h-[1.6rem] ml-2 sm:h-[1.8rem] sm:mt-0.5 md:h-[2rem] mt-0">
+                                <!-- <img src="{{asset('upload/flask.png')}}" alt="flask" 
+                                
+                                class="h-[1.6rem] ml-2 sm:h-[1.8rem] sm:mt-0.5 md:h-[1.6rem] md:w-[1.6rem] mt-0"> -->
+                                 <img src="{{asset('icon/flask.png')}}" alt="flask" 
+                                
+                                class="min-h-[2.25rem]">
                             </div>
                             <div class="overflow-auto">
                                 <p class="text-white font-arialRegular font-medium text-xs sm:text-sm text-left">
-                                    Deerwalk Pokhara School champions holistic development through a diverse range of extracurricular activities (ECA), including student clubs categorized as exclusive and inclusive.
+                                    Deerwalk Bharatpur School champions holistic development through a diverse range of extracurricular activities (ECA), including student clubs categorized as exclusive and inclusive.
                                     These clubs offer students opportunities for personal growth, leadership development, and overall enrichment alongside their academic pursuits.
-                                    Through active participation in these activities, students can explore their interests, cultivate new skills, forge enduring friendships, and enhance their overall educational journey at Deerwalk Pokhara School.
+                                    Through active participation in these activities, students can explore their interests, cultivate new skills, forge enduring friendships, and enhance their overall educational journey at Deerwalk Bharatpur School.
                                 </p>
                             </div>
                         </div>
@@ -369,10 +374,10 @@
 
 <!-- <div class="flex justify-center pt-11 sm:pt-14 md:pt-16 lg:pt-20 xl:pt-24">
     <div class="md:hidden w-full">
-        <img src="{{asset('storage/Analytics.png')}}" class="object-cover w-full px-6">
+        <img src="{{asset('upload/Analytics.png')}}" class="object-cover w-full px-6">
     </div>
     <div class="hidden md:block">
-        <img src="{{asset('storage/Analytics.png')}}" class="object-cover w-full px-16">
+        <img src="{{asset('upload/Analytics.png')}}" class="object-cover w-full px-16">
     </div>
 </div> -->
 
@@ -449,10 +454,10 @@
             <div class="flex justify-center">
                 <div class="flex flex-col gap-8 sm:gap-10 md:gap-12 text-center">
                     <h1 class="text-primary font-arialBold font-bold text-2xl md:text-4xl">Founder's Greetings</h1>
-                    <img src="{{asset('storage/rudrasir.png')}}" class="rounded-full border-2 border-primary w-[14rem] h-[14rem] sm:w-[16rem] sm:h-[16rem] md:w-[20rem] md:h-[20rem] mx-auto object-cover">
+                    <img src="{{asset('upload/rudrasir.png')}}" class="rounded-full border-2 border-primary w-[14rem] h-[14rem] sm:w-[16rem] sm:h-[16rem] md:w-[20rem] md:h-[20rem] mx-auto object-cover">
                     <div class="overflow-auto max-h-[10rem]">
                         <p class="px-14 sm:px-16 md:px-24 font-arialRegular font-medium text-justify">
-                            At Deerwalk Pokhara School, we take a holistic approach to education. While we strive for excellence in academics, our mission extends beyond that: We teach our students the soft and hard skills they need to become confident and curious citizens of the world.
+                            At Deerwalk Bharatpur School, we take a holistic approach to education. While we strive for excellence in academics, our mission extends beyond that: We teach our students the soft and hard skills they need to become confident and curious citizens of the world.
                             We focus on reading, writing and coding. Reading a range of texts — fiction, non-fiction, poetry and beyond — helps students expand their vocabularies and become clearer thinkers and writers.
                             Reading and writing skills go hand-in-hand. Students use what they’ve learned from reading to further hone their analytical and creative writing skills and become better communicators.
                             Coding teaches students the art of problem-solving and acquaints them with the technologies of the future — skills that will be key regardless of the career paths they choose.
@@ -474,10 +479,10 @@
         <div class="flex justify-center">
                 <div class="flex flex-col gap-8 sm:gap-10 md:gap-12 text-center">
                     <h1 class="text-primary font-arialBold font-bold text-2xl md:text-4xl">Chairperson's Greetings</h1>
-                    <img src="{{asset('storage/hiteshsir.png')}}" class="rounded-full border-2 border-primary w-[14rem] h-[14rem] sm:w-[16rem] sm:h-[16rem] md:w-[20rem] md:h-[20rem] mx-auto object-cover">
+                    <img src="{{asset('upload/hiteshsir.jpg')}}" class="rounded-full border-2 border-primary w-[14rem] h-[14rem] sm:w-[16rem] sm:h-[16rem] md:w-[20rem] md:h-[20rem] mx-auto object-cover">
                     <div class="overflow-auto max-h-[10rem]">
                         <p class="px-14 sm:px-16 md:px-24 font-arialRegular font-medium text-justify">
-                        Deerwalk Pokhara School, the second school established by the Deerwalk Group, is dedicated to providing an exceptional educational experience to the people of Pokhara, an opportunity previously centered around Kathmandu. 
+                        Deerwalk Bharatpur School, the second school established by the Deerwalk Group, is dedicated to providing an exceptional educational experience to the people of Bharatpur, an opportunity previously centered around Kathmandu. 
                         With a super clean and green campus, excellent facilities, and highly trained teachers, the school strives to create a meaningful learning environment. 
                         Inspired by Deerwalk's philosophy of empowering students to excel in their chosen fields, we place a strong emphasis on developing skills in reading, writing, and coding. 
                         We firmly believe these skills enable our students to effectively articulate their ideas—both in written and spoken formats—and enhance their problem-solving abilities. 
@@ -496,9 +501,9 @@
             <div class="flex flex-col items-center gap-10 xl:gap-14 text-center">
                 <h1 class="text-primary font-arialBold font-bold text-4xl">Founder's Greetings</h1>
                 <div class="flex flex-col items-center gap-8 xl:gap-10">
-                    <img src="{{asset('storage/rudrasir.png')}}" class="rounded-full border-4 border-primary lg:w-[15rem] lg:h-[15rem] xl:w-[19rem] xl:h-[19rem] 2xl:w-[24rem] 2xl:h-[24rem] object-cover">
+                    <img src="{{asset('upload/rudrasir.png')}}" class="rounded-full border-4 border-primary lg:w-[15rem] lg:h-[15rem] xl:w-[19rem] xl:h-[19rem] 2xl:w-[24rem] 2xl:h-[24rem] object-cover">
                     <p class="text-justify font-arialRegular font-medium xl:text-lg 2xl:text-lg">
-                        At Deerwalk Pokhara School, we take a holistic approach to education. While we strive for excellence in academics, our mission extends beyond that: We teach our students the soft and hard skills they need to become confident and curious citizens of the world.
+                        At Deerwalk Bharatpur School, we take a holistic approach to education. While we strive for excellence in academics, our mission extends beyond that: We teach our students the soft and hard skills they need to become confident and curious citizens of the world.
                         We focus on reading, writing and coding. Reading a range of texts — fiction, non-fiction, poetry and beyond — helps students expand their vocabularies and become clearer thinkers and writers.
                         Reading and writing skills go hand-in-hand. Students use what they’ve learned from reading to further hone their analytical and creative writing skills and become better communicators.
                         Coding teaches students the art of problem-solving and acquaints them with the technologies of the future — skills that will be key regardless of the career paths they choose.
@@ -512,9 +517,9 @@
             <div class="flex flex-col items-center gap-10 xl:gap-14 text-center">
                 <h1 class="text-primary font-arialBold font-bold text-4xl">Chairperson's Greetings</h1>
                 <div class="flex flex-col items-center gap-8 xl:gap-10">
-                    <img src="{{asset('storage/hiteshsir.png')}}" class="rounded-full border-4 border-primary lg:w-[15rem] lg:h-[15rem] xl:w-[19rem] xl:h-[19rem] 2xl:w-[24rem] 2xl:h-[24rem] object-cover">
+                    <img src="{{asset('upload/hiteshsir.jpg')}}" class="rounded-full border-4 border-primary lg:w-[15rem] lg:h-[15rem] xl:w-[19rem] xl:h-[19rem] 2xl:w-[24rem] 2xl:h-[24rem] object-cover">
                     <p class="text-justify font-arialRegular font-medium xl:text-lg 2xl:text-lg">
-                        Deerwalk Pokhara School, the second school established by the Deerwalk Group, is dedicated to providing an exceptional educational experience to the people of Pokhara, an opportunity previously centered around Kathmandu. 
+                        Deerwalk Bharatpur School, the second school established by the Deerwalk Group, is dedicated to providing an exceptional educational experience to the people of Bharatpur, an opportunity previously centered around Kathmandu. 
                         With a super clean and green campus, excellent facilities, and highly trained teachers, the school strives to create a meaningful learning environment. 
                         Inspired by Deerwalk's philosophy of empowering students to excel in their chosen fields, we place a strong emphasis on developing skills in reading, writing, and coding. 
                         We firmly believe these skills enable our students to effectively articulate their ideas—both in written and spoken formats—and enhance their problem-solving abilities. 
@@ -529,14 +534,14 @@
             <!-- <div class="flex flex-col pt-8 items-center gap-10 xl:gap-14 text-center">
                 <h1 class="text-primary font-arialBold font-bold text-4xl">Principal's Message</h1>
                 <div class="flex flex-col items-center gap-8 xl:gap-10">
-                    <img src="{{asset('storage/Nirmal_sir.png')}}" class="rounded-full border-4 border-primary lg:w-[15rem] lg:h-[15rem] xl:w-[19rem] xl:h-[19rem] 2xl:w-[24rem] 2xl:h-[24rem] object-cover">
+                    <img src="{{asset('upload/Nirmal_sir.png')}}" class="rounded-full border-4 border-primary lg:w-[15rem] lg:h-[15rem] xl:w-[19rem] xl:h-[19rem] 2xl:w-[24rem] 2xl:h-[24rem] object-cover">
                     <p class="text-justify font-arialRegular font-semibold xl:text-lg 2xl:text-lg">
-                        Deerwalk Pokhara School (DPS) is committed to fostering a culture of learning and inspiration.
+                        Deerwalk Bharatpur School (DPS) is committed to fostering a culture of learning and inspiration.
                         Our campus community places a strong emphasis on knowledge acquisition while upholding high standards in academics.
                         We focus on four key pillars: Essential Skills, Language Proficiency, Academic Foundations, and Excellence in Extracurricular Activities (ECA), ensuring a well-rounded education for our students.
                         With collaborative efforts from School Management, Students, Parents, and Teachers, we strive to unleash the inherent potential in every student, preparing them to become proud DPS Alumni and responsible global citizens.
                     </p>
-                    <p class="font-arialBold font-bold text-xl">- Nirmal Kumar Paudel, Deerwalk Pokhara School</p>
+                    <p class="font-arialBold font-bold text-xl">- Nirmal Kumar Paudel, Deerwalk Bharatpur School</p>
                 </div>
             </div> -->
         </div>
@@ -605,7 +610,7 @@
             <div class="relative w-[8rem] h-[4rem] sm:w-[16rem] sm:h-[7rem] lg:w-[11rem] lg:h-[7rem] xl:w-[14rem] xl:h-[8rem] 2xl:w-[15rem] 2xl:h-[8rem] bg-primary rounded-lg">
                 <div class="absolute bottom-2 right-2 bg-sky-100 w-full h-full rounded-lg flex items-center justify-center">
                     <a target="_blank" href="https://deerwalk.edu.np/sifalschool/">
-                        <img src="{{asset('storage/deerwalk_sifal_school_logo.png')}}" class="w-24 sm:w-40 lg:w-36 xl:w-40 2xl:w-44">
+                        <img src="{{asset('upload/deerwalk_sifal_school_logo.png')}}" class="w-24 sm:w-40 lg:w-36 xl:w-40 2xl:w-44">
                     </a>
                 </div>
             </div>
@@ -615,27 +620,28 @@
             <div class="relative w-[8rem] h-[4rem] sm:w-[16rem] sm:h-[7rem] lg:w-[11rem] lg:h-[7rem] xl:w-[14rem] xl:h-[8rem] 2xl:w-[15rem] 2xl:h-[8rem] bg-primary rounded-lg">
                 <div class="absolute bottom-2 right-2 bg-sky-100 w-full h-full rounded-lg flex items-center justify-center">
                     <a target="_blank" href="https://deerwalk.edu.np/dhading-school">
-                        <img src="{{asset('storage/deerwalk_dhading_school_logo.png')}}" class="w-24 sm:w-40 lg:w-36 xl:w-40 2xl:w-44">
+                        <img src="{{asset('upload/deerwalk_dhading_school_logo.png')}}" class="w-24 sm:w-40 lg:w-36 xl:w-40 2xl:w-44">
                     </a>
                 </div>
             </div>
         </div>
         <!-- Unit 3 -->
         <div class="cursor-pointer">
-            <div class="relative w-[8rem] h-[4rem] sm:w-[16rem] sm:h-[7rem] lg:w-[11rem] lg:h-[7rem] xl:w-[14rem] xl:h-[8rem] 2xl:w-[15rem] 2xl:h-[8rem] bg-primary rounded-lg">
+             <div class="relative w-[8rem] h-[4rem] sm:w-[16rem] sm:h-[7rem] lg:w-[11rem] lg:h-[7rem] xl:w-[14rem] xl:h-[8rem] 2xl:w-[15rem] 2xl:h-[8rem] bg-primary rounded-lg">
                 <div class="absolute bottom-2 right-2 bg-sky-100 w-full h-full rounded-lg flex items-center justify-center">
-                    <a target="_blank" href="https://deerwalk.edu.np/DWIT/">
-                        <img src="{{asset('storage/dwit_logo.png')}}" class="w-24 sm:w-40 lg:w-36 xl:w-40 2xl:w-44">
+                    <a target="_blank" href="https://dlc.dwit.edu.np/">
+                        <img src="{{asset('upload/deerwalk_pokhara_school_logo.png')}}" class="w-24 sm:w-40 lg:w-36 xl:w-40 2xl:w-44">
                     </a>
                 </div>
             </div>
+            
         </div>
         <!-- Unit 4 -->
         <div class="cursor-pointer">
-            <div class="relative w-[8rem] h-[4rem] sm:w-[16rem] sm:h-[7rem] lg:w-[11rem] lg:h-[7rem] xl:w-[14rem] xl:h-[8rem] 2xl:w-[15rem] 2xl:h-[8rem] bg-primary rounded-lg">
+           <div class="relative w-[8rem] h-[4rem] sm:w-[16rem] sm:h-[7rem] lg:w-[11rem] lg:h-[7rem] xl:w-[14rem] xl:h-[8rem] 2xl:w-[15rem] 2xl:h-[8rem] bg-primary rounded-lg">
                 <div class="absolute bottom-2 right-2 bg-sky-100 w-full h-full rounded-lg flex items-center justify-center">
-                    <a target="_blank" href="https://dlc.dwit.edu.np/">
-                        <img src="{{asset('storage/dlc_logo.png')}}" class="w-24 sm:w-40 lg:w-36 xl:w-40 2xl:w-44">
+                    <a target="_blank" href="https://deerwalk.edu.np/DWIT/">
+                        <img src="{{asset('upload/dwit_logo.png')}}" class="w-24 sm:w-40 lg:w-36 xl:w-40 2xl:w-44">
                     </a>
                 </div>
             </div>
@@ -645,7 +651,7 @@
             <div class="relative w-[8rem] h-[4rem] sm:w-[16rem] sm:h-[7rem] lg:w-[11rem] lg:h-[7rem] xl:w-[14rem] xl:h-[8rem] 2xl:w-[15rem] 2xl:h-[8rem] bg-primary rounded-lg">
                 <div class="absolute bottom-2 right-2 bg-sky-100 w-full h-full rounded-lg flex items-center justify-center">
                     <a target="_blank" href="https://deerwalktrainingcenter.com/">
-                        <img src="{{asset('storage/dtc_logo.png')}}" class="w-24 sm:w-40 lg:w-36 xl:w-40 2xl:w-44">
+                        <img src="{{asset('upload/dtc_logo.png')}}" class="w-24 sm:w-40 lg:w-36 xl:w-40 2xl:w-44">
                     </a>
                 </div>
             </div>
@@ -654,11 +660,11 @@
 </div>
 
 <!-- <div class=" pt-11 md:pt-20 lg:pt-20 xl:pt-24 2xl:pt-28 flex justify-center items-center w-full md:px-16">
-    <a target="_blank" href="https://dlc.dwit.edu.np/"><img src="{{asset('storage/DLC_banner.png')}}" class="object-cover w-full md:rounded-3xl"></a>
+    <a target="_blank" href="https://dlc.dwit.edu.np/"><img src="{{asset('upload/DLC_banner.png')}}" class="object-cover w-full md:rounded-3xl"></a>
 </div> -->
 
 <!-- <div class="pt-11 2xl:pt-14 flex justify-center min-w-screen">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28255.09784256106!2d85.14281347910158!3d27.72076789999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb25dc8f452eaf%3A0xc5ff2d33084a4703!2sDeerwalk%20Pokhara%20School!5e0!3m2!1sen!2snp!4v1713259209944!5m2!1sen!2snp" width="2720" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28255.09784256106!2d85.14281347910158!3d27.72076789999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb25dc8f452eaf%3A0xc5ff2d33084a4703!2sDeerwalk%20Bharatpur%20School!5e0!3m2!1sen!2snp!4v1713259209944!5m2!1sen!2snp" width="2720" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div> -->
 <br>
 <br>
@@ -668,7 +674,7 @@
             <div class="flex flex-col lg:flex-row justify-around items-start lg:items-center">
                 <div class="flex flex-col md:gap-3 lg:gap-4 xl:gap-6 2xl:gap-6 mb-6 lg:mb-0">
                     <a href="#whyDPS" class="hover:text-gray-900">
-                        <p class="font-arialRegular font-semibold text-xs lg:text-sm xl:text-sm 2xl:text-lg text-white text-left">Why Deerwalk Pokhara School?</p>
+                        <p class="font-arialRegular font-semibold text-xs lg:text-sm xl:text-sm 2xl:text-lg text-white text-left">Why Deerwalk Bharatpur School?</p>
                     </a>
                     <a href="#Units" class="hover:text-gray-900">
                         <p class="font-arialRegular font-semibold text-xs lg:text-sm xl:text-sm 2xl:text-lg text-white text-left">Our Units</p>
@@ -689,38 +695,38 @@
                     </a>
                 </div>
                 <div class="flex flex-col md:gap-3 lg:gap-4 xl:gap-6 2xl:gap-6 mb-6 lg:mb-0">
-                    <p class="font-arialRegular font-normal text-sm lg:text-sm xl:text-sm 2xl:text-lg text-white text-left">Pokhara-10, Ramghat, Kaski</p>
-                    <p class="font-arialRegular font-normal text-sm lg:text-sm xl:text-sm 2xl:text-lg text-white text-left">061589171, 061586045</p>
-                    <p class="font-arialRegular font-normal text-sm lg:text-sm xl:text-sm 2xl:text-lg text-white text-left">contact@pokhara.deerwalk.edu.np</p>
+                    <p class="font-arialRegular font-normal text-sm lg:text-sm xl:text-sm 2xl:text-lg text-white text-left">Bharatpur-12, Chitwan</p>
+                    <p class="font-arialRegular font-normal text-sm lg:text-sm xl:text-sm 2xl:text-lg text-white text-left">056-420127</p>
+                    <p class="font-arialRegular font-normal text-sm lg:text-sm xl:text-sm 2xl:text-lg text-white text-left">contact@bharatpur.deerwalk.edu.np</p>
             </div>
         </div>
         <div class="flex flex-col gap-4 md:flex-row md:justify-around items-center">
             <div class="flex items-center justify-center mb-4 md:mb-0">
-                <img src="{{asset('storage/DPS-Logo.png')}}" alt="DPS Logo" class="object-fit w-[10rem] md:w-[12rem] lg:w-[12rem] xl:w-[12rem] 2xl:w-52">
+                <img src="{{asset('logo/white.png')}}" alt="DPS Logo" class="object-fit w-[10rem] md:w-[12rem] lg:w-[12rem] xl:w-[12rem] 2xl:w-52">
             </div>
             <div class="flex flex-row items-center gap-2">
                 <p class="text-white text-lg">©</p>
                 <div class="flex flex-col">
                     <p class="font-arialRegular text-xs md:text-xs lg:text-xs xl:text-xs 2xl:text-xs text-white">
-                        <span id="currentYear">2025</span> Deerwalk Pokhara School.<br>All Rights Reserved.
+                        <span id="currentYear">2025</span> Deerwalk Bharatpur School.<br>All Rights Reserved.
                     </p>
                 </div>
             </div>
-            <div class="flex justify-center gap-3 lg:gap-6">
-                <a target="_blank" href="https://www.instagram.com/deerwalk_Pokhara_school/">
-                <img src="{{asset('storage/instagram.png')}}" alt="Instagram" class="w-5 lg:w-7 xl:w-7 2xl:w-8">
-                </a>
+            <div class="flex justify-center gap-3 lg:gap-6 text-white">
+                <a target="_blank" href="https://www.instagram.com/deerwalk_Bharatpur_school/">
+                <img src="{{asset('icon/instagram.png')}}" alt="Instagram" class="w-5 lg:w-7 xl:w-7 2xl:w-8">
+            </a>
                 <a target="_blank" href="https://www.facebook.com/profile.php?id=61575052940467">
-                <img src="{{asset('storage/facebook.png')}}" alt="Facebook" class="w-5 lg:w-7 xl:w-7 2xl:w-8">
+                <img src="{{asset('icon/facebook.png')}}" alt="Facebook" class="w-5 lg:w-7 xl:w-7 2xl:w-8">
                 </a>
-                <a target="_blank" href="https://x.com/deerwalkpokhara">
-                <img src="{{asset('storage/twitter.png')}}" alt="Twitter" class="w-5 lg:w-7 xl:w-7 2xl:w-8">
+                <a target="_blank" href="https://x.com/deerwalkBharatpur">
+                <img src="{{asset('icon/twitter.png')}}" alt="Twitter" class="w-5 lg:w-7 xl:w-7 2xl:w-8">
                 </a>
-                <a target="_blank" href="https://www.linkedin.com/company/deerwalk-Pokhara-school/">
-                <img src="{{asset('storage/linkedin.png')}}" alt="LinkedIn" class="w-5 lg:w-7 xl:w-7 2xl:w-8">
+                <a target="_blank" href="https://www.linkedin.com/company/deerwalk-Bharatpur-school/">
+                <img src="{{asset('icon/linkedin.png')}}" alt="LinkedIn" class="w-5 lg:w-7 xl:w-7 2xl:w-8">
                 </a>
-                <a target="_blank" href="https://www.threads.net/@deerwalk_pokhara_school">
-                <img src="{{asset('storage/threads.png')}}" alt="Threads" class="w-5 lg:w-7 xl:w-7 2xl:w-8">
+                <a target="_blank" href="https://www.threads.net/@deerwalk_Bharatpur_school">
+                <img src="{{asset('icon/threads.png')}}" alt="Threads" class="w-5 lg:w-7 xl:w-7 2xl:w-8">
                 </a>
             </div>
         </div>
