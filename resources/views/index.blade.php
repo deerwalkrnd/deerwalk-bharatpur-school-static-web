@@ -713,19 +713,19 @@
                 </div>
             </div>
             <div class="flex justify-center gap-3 lg:gap-6 text-white">
-                <a target="_blank" href="https://www.instagram.com/deerwalk_Bharatpur_school/">
+                <a target="_blank" href="https://www.instagram.com/deerwalk.bharatpur.school/">
                 <img src="{{asset('icon/instagram.png')}}" alt="Instagram" class="w-5 lg:w-7 xl:w-7 2xl:w-8">
             </a>
-                <a target="_blank" href="https://www.facebook.com/profile.php?id=61575052940467">
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=61580509019140">
                 <img src="{{asset('icon/facebook.png')}}" alt="Facebook" class="w-5 lg:w-7 xl:w-7 2xl:w-8">
                 </a>
-                <a target="_blank" href="https://x.com/deerwalkBharatpur">
+                <a target="_blank" href="https://x.com/dwbharatpur">
                 <img src="{{asset('icon/twitter.png')}}" alt="Twitter" class="w-5 lg:w-7 xl:w-7 2xl:w-8">
                 </a>
                 <a target="_blank" href="https://www.linkedin.com/company/deerwalk-Bharatpur-school/">
                 <img src="{{asset('icon/linkedin.png')}}" alt="LinkedIn" class="w-5 lg:w-7 xl:w-7 2xl:w-8">
                 </a>
-                <a target="_blank" href="https://www.threads.net/@deerwalk_Bharatpur_school">
+                <a target="_blank" href="https://www.threads.com/@deerwalk.bharatpur.school">
                 <img src="{{asset('icon/threads.png')}}" alt="Threads" class="w-5 lg:w-7 xl:w-7 2xl:w-8">
                 </a>
             </div>
