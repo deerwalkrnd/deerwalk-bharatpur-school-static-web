@@ -32,7 +32,7 @@
                 <img src="{{ asset('logo/white.png') }}" alt="Logo" class="h-full object-contain">
             </a>
             <button id="hamburger" class="block lg:hidden p-4 focus:outline-none">
-                <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg class="w-6 h-6 text-black" fill="none" stroke="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                 </svg>
             </button>
@@ -57,14 +57,14 @@
             <a href="#Admission" class="block px-4 py-2 font-medium text-black hover:bg-primary hover:text-white">Admission</a>
             <a href="#Courses" class="block px-4 py-2 font-medium text-black hover:bg-primary hover:text-white">Courses</a>
             <a href="#Footer" class="block px-4 py-2 font-medium text-black hover:bg-primary hover:text-white">Contact</a>
-            <div class="relative group">
-                <button class="block w-full text-left px-4 py-2 font-medium text-black hover:bg-primary hover:text-white focus:outline-none">About Us</button>
+            <!-- <div class="relative group">
+                <button class="block w-full text-left px-4 py-2 font-medium text-black hover:bg-primary hover:text-white focus:outline-none">About Us</button> 
                 <div class="hidden group-hover:block ml-4 border-l-2 border-gray-200">
                     <a href="#whyDPS" class="block px-4 py-2 font-body text-black hover:bg-primary hover:text-white">Why DPS</a>
                     <a href="#Management" class="block px-4 py-2 font-body text-black hover:bg-primary hover:text-white">Management</a>
                     <a href="#Units" class="block px-4 py-2 font-body text-black hover:bg-primary hover:text-white">Our Units</a>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <script>
@@ -249,7 +249,7 @@
                     <div class="flex flex-col gap-5 xl:gap-5 2xl:gap-5 md:p-10 lg:p-7 xl:p-9 2xl:p-9 border-8 border-primary rounded-3xl w-[15rem] h-[17rem] sm:w-[28rem] sm:h-[16rem] md:w-[40rem] md:h-[23rem] lg:w-[30rem] lg:h-[18rem] xl:w-[36rem] xl:h-[19rem] 2xl:w-[36rem] 2xl:h-[18rem]">
                         <div class="flex flex-row justify-between">
                             <h1 class="font-arialBold text-primary text-2xl md:text-3xl lg:text-2xl 2xl:text-2xl">Essential Skills</h1>
-                            <img src="{{asset('icon/skills.png')}}" class="h-[2rem] sm:h-[1.8rem] md:h-[2rem] xl:h-[2.7rem] 2xl:h-[2.3rem]" alt="skills">
+                            <img src="{{asset('icon/skills-purple.png')}}" class="h-[2rem] sm:h-[1.8rem] md:h-[2rem] xl:h-[2.7rem] 2xl:h-[2.3rem]" alt="skills">
                         </div>
                         <div>
                             <p class="font-arialRegular lg:text-normal text-justify">
@@ -276,7 +276,7 @@
                 <div class="flex flex-col gap-5 lg:flex-row lg:gap-3 xl:flex-row  xl:gap-5">
                     <div class="flex flex-col gap-5 2xl:gap-6 lg:p-7 xl:p-9 2xl:p-9 border-primary border-8 rounded-3xl w-[20rem] h-[19rem] sm:w-[28rem] sm:h-[16rem] md:w-[32rem] md:h-[20rem] lg:w-[30rem] lg:h-[18rem] lg:bg-primary xl:w-[36rem] xl:h-[19rem] 2xl:w-[36rem] 2xl:h-[18rem] ">
                         <div class="flex flex-row justify-between">
-                            <h1 class="font-arialBold font-bold text-2xl md:text-3xl lg:text-2xl 2xl:text-2xl text-primary lg:text-white">Academic Fundamentals</h1>
+                            <h1 class="font-arialBold  text-2xl md:text-3xl lg:text-2xl 2xl:text-2xl text-primary lg:text-white">Academic Fundamentals</h1>
                             <img src="{{asset('icon/book-white.png')}}" class="h-[2.5rem] sm:h-[1.8rem] md:h-[2rem] xl:h-[2.7rem] 2xl:h-[2.3rem] hidden lg:block" alt="book">
                         </div>
                         <div>
@@ -290,7 +290,7 @@
                     <div class="flex flex-col gap-5 2xl:gap-6 lg:p-7 xl:p-9 2xl:p-9 rounded-3xl lg:border-primary w-[20rem] h-[19rem] sm:w-[28rem] sm:h-[16rem] md:w-[32rem] md:h-[20rem] lg:w-[30rem] lg:h-[18rem] lg:border-8 xl:w-[36rem] xl:h-[19rem] 2xl:w-[36rem] 2xl:h-[18rem]">
                         <div class="flex flex-row justify-between">
                             <h1 class="font-arialBold text-2xl md:text-3xl lg:text-2xl 2xl:text-2xl  lg:text-primary">Extra Curricular Activities</h1>
-                            <img src="{{asset('icon/flask.png')}}" class="h-[2.5rem] sm:h-[1.8rem] md:h-[2rem] xl:h-[2.7rem] 2xl:h-[2.3rem] hidden lg:block" alt="flask">
+                            <img src="{{asset('icon/flask-purple.png')}}" class="h-[2.5rem] sm:h-[1.8rem] md:h-[2rem] xl:h-[2.7rem] 2xl:h-[2.3rem] hidden lg:block" alt="flask">
                         </div>
                         <div>
                             <p class="text-black font-arialRegular lg:text-base text-justify">
@@ -309,7 +309,7 @@
                         <div class="flex flex-col gap-5 p-5 border-4 rounded-xl sm:p-5 md:p-6 sm:border-8 border-primary lg:rounded-3xl w-[13rem] max-h-[17rem] sm:w-[15rem] sm:h-[17rem] md:w-[23rem] md:h-[14rem]">
                             <div class="flex flex-row justify-between">
                                 <h1 class="font-arialBold font-bold text-base sm:text-xl text-primary md:text-3xl">Essential Skills</h1>
-                                <img src="{{asset('icon/skills.png')}}" class="ml-2 h-[1.6rem] sm:h-[1.8rem] sm:mt-0.5 md:h-[2rem] md:mt-0 xl:pr-9 xl:mr-4 xl:h-[2.1rem]" alt="skills">
+                                <img src="{{asset('icon/skills-purple.png')}}" class="ml-2 h-[1.6rem] sm:h-[1.8rem] sm:mt-0.5 md:h-[2rem] md:mt-0 xl:pr-9 xl:mr-4 xl:h-[2.1rem]" alt="skills">
                             </div>
                             <div class="overflow-auto">
                                 <p class="font-arialRegular font-medium text-left text-xs sm:text-sm">
@@ -337,7 +337,7 @@
                         <div class="flex flex-col gap-5 p-5 sm:p-5 md:p-6 border-primary border-4 sm:border-8 rounded-xl lg:rounded-3xl w-[13rem] max-h-[17rem] overflow-auto sm:w-[15rem] sm:h-[17rem] md:w-[23rem] md:h-[14rem]">
                             <div class="flex flex-row justify-between">
                                 <h1 class="font-arialBold font-bold text-base sm:text-xl md:text-3xl text-primary">Academic Fundamentals</h1>
-                                <img src="{{asset('icon/book-white.png')}}" class="h-[1.6rem] sm:h-[1.8rem] sm:mt-0.5 md:h-[2rem]" alt="book">
+                                <img src="{{asset('icon/book-purple.png')}}" class="h-[1.6rem] sm:h-[1.8rem] sm:mt-0.5 md:h-[2rem]" alt="book">
                             </div>
                             <div class="overflow-auto">
                                 <p class="font-arialRegular font-medium text-xs sm:text-sm text-left">
@@ -351,10 +351,10 @@
                                 <h1 class="font-arialBold font-bold text-base sm:text-xl md:text-3xl text-white">Extra Curricular Activities</h1>
                                 <!-- <img src="{{asset('upload/flask.png')}}" alt="flask" 
                                 
-                                class="h-[1.6rem] ml-2 sm:h-[1.8rem] sm:mt-0.5 md:h-[1.6rem] md:w-[1.6rem] mt-0"> -->
-                                 <img src="{{asset('icon/flask.png')}}" alt="flask" 
+                                class="> -->
+                                 <img src="{{asset('icon/flask-white.png')}}" alt="flask" 
                                 
-                                class="min-h-[2.25rem]">
+                                class="min-h-[2.25rem] h-[1.6rem] ml-2 sm:h-[1.8rem] sm:mt-0.5 md:h-[1.6rem] md:w-[1.6rem] mt-0"">
                             </div>
                             <div class="overflow-auto">
                                 <p class="text-white font-arialRegular font-medium text-xs sm:text-sm text-left">
@@ -629,7 +629,7 @@
         <div class="cursor-pointer">
              <div class="relative w-[8rem] h-[4rem] sm:w-[16rem] sm:h-[7rem] lg:w-[11rem] lg:h-[7rem] xl:w-[14rem] xl:h-[8rem] 2xl:w-[15rem] 2xl:h-[8rem] bg-primary rounded-lg">
                 <div class="absolute bottom-2 right-2 bg-sky-100 w-full h-full rounded-lg flex items-center justify-center">
-                    <a target="_blank" href="https://dlc.dwit.edu.np/">
+                    <a target="_blank" href="https://dps.deerwalk.edu.np/">
                         <img src="{{asset('upload/deerwalk_pokhara_school_logo.png')}}" class="w-24 sm:w-40 lg:w-36 xl:w-40 2xl:w-44">
                     </a>
                 </div>
