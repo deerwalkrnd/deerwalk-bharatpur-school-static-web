@@ -45,10 +45,10 @@
                         <a href="#Units" class="px-4 py-2 font-body text-black hover:bg-primary hover:text-white">Our Units</a>
                     </div> -->
                 </div>
-                <a href="#Academics" class="font-medium text-white hover:text-primary">Academics</a>
-                <a href="#Admission" class="font-medium text-white hover:text-primary">Admission</a>
-                <a href="#Courses" class="font-medium text-white hover:text-primary">Courses</a>
-                <a href="#Footer" class="font-medium text-white hover:text-primary">Contact</a>
+                <a href="#Academics" class="font-medium text-white hover:border-b border-solid border-white">Academics</a>
+                <a href="#Admission" class="font-medium text-white hover:border-b border-solid border-white">Admission</a>
+                <a href="#Courses" class="font-medium text-white hover:border-b border-solid border-white">Courses</a>
+                <a href="#Footer" class="font-medium text-white hover:border-b border-solid border-white">Contact</a>
             </div>
         </nav>
 
