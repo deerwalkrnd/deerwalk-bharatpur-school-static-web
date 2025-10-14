@@ -696,7 +696,7 @@
                 </div>
                 <div class="flex flex-col md:gap-3 lg:gap-4 xl:gap-6 2xl:gap-6 mb-6 lg:mb-0">
                     <p class="font-arialRegular font-normal text-sm lg:text-sm xl:text-sm 2xl:text-lg text-white text-left">Bharatpur-12, Chitwan</p>
-                    <p class="font-arialRegular font-normal text-sm lg:text-sm xl:text-sm 2xl:text-lg text-white text-left">056-420127</p>
+                    <p class="font-arialRegular font-normal text-sm lg:text-sm xl:text-sm 2xl:text-lg text-white text-left">056-420127, 9767466877</p>
                     <p class="font-arialRegular font-normal text-sm lg:text-sm xl:text-sm 2xl:text-lg text-white text-left">contact@bharatpur.deerwalk.edu.np</p>
             </div>
         </div>
