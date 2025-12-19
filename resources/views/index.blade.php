@@ -19,7 +19,7 @@
         <div class="popup-content" style="width: 40%; position: relative;">
             <button class="closebtn" onclick="hidePopup()" style="position: absolute; top: 10px; right: 10px; z-index: 1002;"><b>X</b></button>
             <img src="https://DPS.deerwalk.edu.np/pictures/Admission.png" alt="Admission" style="width: 100%">
-            
+
         </div>
     </div>
 </div> -->
@@ -58,7 +58,7 @@
             <a href="#Courses" class="block px-4 py-2 font-medium text-black hover:bg-primary hover:text-white">Courses</a>
             <a href="#Footer" class="block px-4 py-2 font-medium text-black hover:bg-primary hover:text-white">Contact</a>
             <!-- <div class="relative group">
-                <button class="block w-full text-left px-4 py-2 font-medium text-black hover:bg-primary hover:text-white focus:outline-none">About Us</button> 
+                <button class="block w-full text-left px-4 py-2 font-medium text-black hover:bg-primary hover:text-white focus:outline-none">About Us</button>
                 <div class="hidden group-hover:block ml-4 border-l-2 border-gray-200">
                     <a href="#whyDPS" class="block px-4 py-2 font-body text-black hover:bg-primary hover:text-white">Why DPS</a>
                     <a href="#Management" class="block px-4 py-2 font-body text-black hover:bg-primary hover:text-white">Management</a>
@@ -79,7 +79,7 @@
         </script>
     </header>
 
-    
+
     <div class="relative w-full h-screen overflow-hidden" id="carousel">
     <!-- Carousel Slides -->
     <div class="w-full h-full">
@@ -93,7 +93,7 @@
             <img src="{{ asset('upload/carousel1.png') }}" alt="Third slide" class="object-cover h-screen w-screen">
         </div> -->
     </div>
-    
+
     <!-- Navigation arrows -->
     <!-- <button class="absolute top-1/2 left-4 -translate-y-1/2 w-12 h-12 bg-black/30 hover:bg-black/50 rounded-full flex items-center justify-center z-30 cursor-pointer border-none text-white transition-colors duration-300" id="prevButton" aria-label="Previous slide">
         <i class="text-xl">&larr;</i>
@@ -109,30 +109,30 @@
         const prevButton = document.getElementById('prevButton');
         const nextButton = document.getElementById('nextButton');
         const carousel = document.getElementById('carousel');
-        
+
         let currentIndex = 0;
         let isTransitioning = false;
         let autoplayInterval;
-        
+
         function showSlide(index) {
             if (isTransitioning) return;
-            
+
             isTransitioning = true;
             const normalizedIndex = ((index % slides.length) + slides.length) % slides.length;
-            
+
             slides.forEach(slide => slide.classList.remove('opacity-100'));
             slides.forEach(slide => slide.classList.add('opacity-0'));
-            
+
             slides[normalizedIndex].classList.remove('opacity-0');
             slides[normalizedIndex].classList.add('opacity-100');
-            
+
             currentIndex = normalizedIndex;
-            
+
             setTimeout(() => {
                 isTransitioning = false;
             }, 500);
         }
-        
+
         function goToPrevSlide() {
             showSlide(currentIndex - 1);
         }
@@ -140,10 +140,10 @@
         function goToNextSlide() {
             showSlide(currentIndex + 1);
         }
-        
+
         prevButton.addEventListener('click', goToPrevSlide);
         nextButton.addEventListener('click', goToNextSlide);
-        
+
         document.addEventListener('keydown', function(e) {
             if (e.key === 'ArrowLeft') {
                 goToPrevSlide();
@@ -151,15 +151,15 @@
                 goToNextSlide();
             }
         });
-        
+
         let touchStartX = 0;
         let touchEndX = 0;
-        
+
         carousel.addEventListener('touchstart', function(e) {
             touchStartX = e.changedTouches[0].screenX;
             stopAutoplay();
         });
-        
+
         carousel.addEventListener('touchend', function(e) {
             touchEndX = e.changedTouches[0].screenX;
             if (touchEndX < touchStartX - 50) {
@@ -169,17 +169,17 @@
             }
             startAutoplay();
         });
-        
+
         function startAutoplay() {
             autoplayInterval = setInterval(goToNextSlide, 3000);
         }
-        
+
         function stopAutoplay() {
             clearInterval(autoplayInterval);
         }
-        
+
         startAutoplay();
-        
+
         carousel.addEventListener('mouseenter', stopAutoplay);
         carousel.addEventListener('mouseleave', startAutoplay);
     });
@@ -349,11 +349,11 @@
                         <div class="flex flex-col gap-5 p-5 sm:p-5 md:p-6 rounded-lg lg:rounded-3xl bg-primary border-primary border-4 w-[13rem] max-h-[17rem] overflow-auto sm:w-[15rem] sm:h-[17rem] md:w-[23rem] md:h-[14rem]">
                             <div class="flex flex-row justify-between">
                                 <h1 class="font-arialBold font-bold text-base sm:text-xl md:text-3xl text-white">Extra Curricular Activities</h1>
-                                <!-- <img src="{{asset('upload/flask.png')}}" alt="flask" 
-                                
+                                <!-- <img src="{{asset('upload/flask.png')}}" alt="flask"
+
                                 class="> -->
-                                 <img src="{{asset('icon/flask-white.png')}}" alt="flask" 
-                                
+                                 <img src="{{asset('icon/flask-white.png')}}" alt="flask"
+
                                 class="min-h-[2.25rem] h-[1.6rem] ml-2 sm:h-[1.8rem] sm:mt-0.5 md:h-[1.6rem] md:w-[1.6rem] mt-0"">
                             </div>
                             <div class="overflow-auto">
@@ -470,7 +470,7 @@
         </div>
         <br>
         <br>
-        
+
         <div class="flex flex-col gap-11 sm:gap-12 md:gap-14 lg:hidden">
 
 
@@ -479,14 +479,14 @@
         <div class="flex justify-center">
                 <div class="flex flex-col gap-8 sm:gap-10 md:gap-12 text-center">
                     <h1 class="text-primary font-arialBold font-bold text-2xl md:text-4xl">Chairperson's Greetings</h1>
-                    <img src="{{asset('upload/hiteshsir.jpg')}}" class="rounded-full border-2 border-primary w-[14rem] h-[14rem] sm:w-[16rem] sm:h-[16rem] md:w-[20rem] md:h-[20rem] mx-auto object-cover">
+                    <img src="{{asset('upload/hitesh_sir.png')}}" class="rounded-full border-2 border-primary w-[14rem] h-[14rem] sm:w-[16rem] sm:h-[16rem] md:w-[20rem] md:h-[20rem] mx-auto object-cover">
                     <div class="overflow-auto max-h-[10rem]">
                         <p class="px-14 sm:px-16 md:px-24 font-arialRegular font-medium text-justify">
-                        Deerwalk Bharatpur School, the second school established by the Deerwalk Group, is dedicated to providing an exceptional educational experience to the people of Bharatpur, an opportunity previously centered around Kathmandu. 
-                        With a super clean and green campus, excellent facilities, and highly trained teachers, the school strives to create a meaningful learning environment. 
-                        Inspired by Deerwalk's philosophy of empowering students to excel in their chosen fields, we place a strong emphasis on developing skills in reading, writing, and coding. 
-                        We firmly believe these skills enable our students to effectively articulate their ideas—both in written and spoken formats—and enhance their problem-solving abilities. 
-                        Uniquely, our school does not enforce uniforms, reflecting our commitment to nurturing the individuality of each student. 
+                        Deerwalk Bharatpur School, the second school established by the Deerwalk Group, is dedicated to providing an exceptional educational experience to the people of Bharatpur, an opportunity previously centered around Kathmandu.
+                        With a super clean and green campus, excellent facilities, and highly trained teachers, the school strives to create a meaningful learning environment.
+                        Inspired by Deerwalk's philosophy of empowering students to excel in their chosen fields, we place a strong emphasis on developing skills in reading, writing, and coding.
+                        We firmly believe these skills enable our students to effectively articulate their ideas—both in written and spoken formats—and enhance their problem-solving abilities.
+                        Uniquely, our school does not enforce uniforms, reflecting our commitment to nurturing the individuality of each student.
                         We believe our role is to foster an environment that supports the personal and intellectual growth of every learner.
                         </p>
                     </div>
@@ -517,13 +517,13 @@
             <div class="flex flex-col items-center gap-10 xl:gap-14 text-center">
                 <h1 class="text-primary font-arialBold font-bold text-4xl">Chairperson's Greetings</h1>
                 <div class="flex flex-col items-center gap-8 xl:gap-10">
-                    <img src="{{asset('upload/hiteshsir.jpg')}}" class="rounded-full border-4 border-primary lg:w-[15rem] lg:h-[15rem] xl:w-[19rem] xl:h-[19rem] 2xl:w-[24rem] 2xl:h-[24rem] object-cover">
+                    <img src="{{asset('upload/hitesh_sir.png')}}" class="rounded-full border-4 border-primary lg:w-[15rem] lg:h-[15rem] xl:w-[19rem] xl:h-[19rem] 2xl:w-[24rem] 2xl:h-[24rem] object-cover">
                     <p class="text-justify font-arialRegular font-medium xl:text-lg 2xl:text-lg">
-                        Deerwalk Bharatpur School, the second school established by the Deerwalk Group, is dedicated to providing an exceptional educational experience to the people of Bharatpur, an opportunity previously centered around Kathmandu. 
-                        With a super clean and green campus, excellent facilities, and highly trained teachers, the school strives to create a meaningful learning environment. 
-                        Inspired by Deerwalk's philosophy of empowering students to excel in their chosen fields, we place a strong emphasis on developing skills in reading, writing, and coding. 
-                        We firmly believe these skills enable our students to effectively articulate their ideas—both in written and spoken formats—and enhance their problem-solving abilities. 
-                        Uniquely, our school does not enforce uniforms, reflecting our commitment to nurturing the individuality of each student. 
+                        Deerwalk Bharatpur School, the second school established by the Deerwalk Group, is dedicated to providing an exceptional educational experience to the people of Bharatpur, an opportunity previously centered around Kathmandu.
+                        With a super clean and green campus, excellent facilities, and highly trained teachers, the school strives to create a meaningful learning environment.
+                        Inspired by Deerwalk's philosophy of empowering students to excel in their chosen fields, we place a strong emphasis on developing skills in reading, writing, and coding.
+                        We firmly believe these skills enable our students to effectively articulate their ideas—both in written and spoken formats—and enhance their problem-solving abilities.
+                        Uniquely, our school does not enforce uniforms, reflecting our commitment to nurturing the individuality of each student.
                         We believe our role is to foster an environment that supports the personal and intellectual growth of every learner.
                     </p>
                     <p class="font-arialBold font-semibold text-xl">- Hitesh Karki, Chairperson</p>
@@ -634,7 +634,7 @@
                     </a>
                 </div>
             </div>
-            
+
         </div>
         <!-- Unit 4 -->
         <div class="cursor-pointer">
